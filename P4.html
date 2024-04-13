@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Kozak Portfolio Project 4</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Project 4</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About Me</a></li>
+							<li><a href="P1.html">P1</a></li>
+                            <li><a href="P2.html">P2</a></li>
+							<li><a href="P3.html">P3</a></li>
+                            <li class="active"><a href="P4.html">P4</a></li>
+                            <li><a href="P5.html">P5</a></li>
+                            <li><a href="P6.html">P6</a></li>
+                            <li><a href="P7.html">P7</a></li>
+							<li><a href="P8.html">P8</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/leonkozak/" class="icon brands fa-linkedin"><span class="label">fa-linkedin</span></a></li>
+							<li><a href="https://github.com/LeonSKozak" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Excel Project<br />
+									Data on Students</h1>
+									<p>This Project was part of the class "Data Analytics for Marketing Applications" at DCU Business School. The data set was the result of two surveys which each student had to complete. The goal of this assignment was to clean the data, calculate missing values, and to find interesting stories, hidden inside the data.  </p>
+								</header>
+								<div class="image main"><img src="images/Students.jpg" alt="" /></div>
+								<p>Below, you can take a look at the unaltered data set. The first spreadshirt, labeled as "Demographics", contains all demographic data. Here, 5 values are missing. This spreadsheet contains 122 rows of data. The "Personality" Spreadsheet, contains the personality-scores of each student, as they had to do a personality test. This data shows their respective scores on extraversion, intuition, thinking, judging and assertiveness. This spreadsheet, however, only contains 104 rows, as not all students filled out the personality test. The two spreadsheets can be merged via the "last for digits of phone number" column. </p>
+								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3xjv-URAoAZDuhN3yV1imS7L972bgghzqAHq01qPwGS7Xsf-UnSVsj1Q_SPgXOVHaDwA6NAqOxQnt/pubhtml?widget=true&amp;headers=false" width="900" height="600"></iframe>
+								<p>First, we quickly examined the data. This showed us, that the data is heavily leaning towards positive product ratings. Next, we looked at one example review and tokenized it, using NLTK. In the next step, we used Vader Sentiment Scoring. First, we tested the vader scoring on some very explicit example sentences, such as "I am so happy". This testing helped us to get a feeling for how this scoring works. Then, we let the polarity score, which gave each review a score for negativity, neutrality, positivity and then a compounded score, run over the entire data set. This showed us, that the higher the polarity score, the higher the product rating (Score). Furthermore, we used a pre-trained tokenizer (Roberta Model), which was trained on large quantities of twitter data. We then compared the scores of the Vader Sentiment Scores with the Roberta Sentiment Scores. Ultimately, we checked for incorrect sentiment scores, meaning cases, in which a high score was given by the user, but our models thought that the review was negative and vice versa. This showed us, that in certain cases, sentiment analysis is still flawed. Still, for large data sets, it is able to detect sentiment correctly. </p>
+								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgKrsvlM4WB50-0V9Q1kZYmYJe7kt8IWT9yEqwKHxfiQf_IA25aWhcrSW3b7_T6eqFQrAMltxSu08P/pubhtml?widget=true&amp;headers=false" width="900" height="600"></iframe>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+
+				<footer id="footer">
+					<div class="pagination">
+						<!--<a href="#" class="previous">Prev</a>-->
+						<a href="index.html" class="page">CV</a>
+						<a href="P1.html" class="page">P1</a>
+						<a href="P2.html" class="page">P2</a>
+						<a href="P3.html" class="page">P3</a>
+						<a href="P4.html" class="page active">P4</a>
+						<a href="P5.html" class="page">P5</a>
+						<a href="P6.html" class="page">P6</a>
+						<a href="P7.html" class="page">P7</a>
+						<a href="P8.html" class="page">P8</a>
+						
+					</div>
+				
+
+		
+
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>107 Dorset Street Upper<br />
+								Dublin, D01 F6F8, Ireland</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+49 1742497721</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">leon.sebastian.k@gmail.com</a></p>
+							</section>
+						</section>
+					</footer>
+
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
