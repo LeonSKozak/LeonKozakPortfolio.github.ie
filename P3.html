@@ -30,6 +30,7 @@
                             <li><a href="P6.html">P6</a></li>
                             <li><a href="P7.html">P7</a></li>
 							<li><a href="P8.html">P8</a></li>
+							<li><a href="P9_Blogs.html">Blogs</a></li>
 						
 						</ul>
 						<ul class="icons">
@@ -46,12 +47,12 @@
 								<header class="major">
 									<h1>Python Project 3<br />
 									Sentiment Analysis</h1>
-									<p>In this project, Lasse Willen, Vincent Stilz and I worked on a data set containing 568,264 rows of sentiment Data. In this case, the sentiment is based on online reviews about different products. 
-                                        The data set contains collumns such as Profile Name, A ratig of the product (1-5 stars, 5 being best), and the review itself in text form. </p>
+									<p>In this project, Lasse Willen and I worked on a data set containing 568,264 rows of sentiment Data. In this case, the sentiment is based on online reviews about different products. 
+                                        The data set contains collumns such as Profile Name, A ratig of the product (1-5 stars, 5 being best), and the review itself in text form. </p><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPNGIQ5dahyrGzRO1paTpHdZ9Z3FGR2vTi4LCHwKOwB25hA_Y_R_P7m-zIEfmt4rPszpjoejb3-vs-/pubhtml?gid=1598623735&amp;single=true&amp;widget=true&amp;headers=false"> Reviews Data Set</a>
 								</header>
 								<div class="image main"><img src="images/Sentiment.jpg" alt="" /></div>
 								<p>Below, you can take a look at the data set. Since the original data set contains over 560,000 rows, the version below is shortened to 1,500 columns, as Google Tables would not be able to showcase it otherwise. </p>
-								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPNGIQ5dahyrGzRO1paTpHdZ9Z3FGR2vTi4LCHwKOwB25hA_Y_R_P7m-zIEfmt4rPszpjoejb3-vs-/pubhtml?gid=1598623735&amp;single=true&amp;widget=true&amp;headers=false"" width="900" height="600"></iframe>
+								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPNGIQ5dahyrGzRO1paTpHdZ9Z3FGR2vTi4LCHwKOwB25hA_Y_R_P7m-zIEfmt4rPszpjoejb3-vs-/pubhtml?gid=1598623735&amp;single=true&amp;widget=true&amp;headers=false" width="900" height="600"></iframe>
 								<p>First, we quickly examined the data. This showed us, that the data is heavily leaning towards positive product ratings. Next, we looked at one example review and tokenized it, using NLTK. In the next step, we used Vader Sentiment Scoring. First, we tested the vader scoring on some very explicit example sentences, such as "I am so happy". This testing helped us to get a feeling for how this scoring works. Then, we let the polarity score, which gave each review a score for negativity, neutrality, positivity and then a compounded score, run over the entire data set. This showed us, that the higher the polarity score, the higher the product rating (Score). Furthermore, we used a pre-trained tokenizer (Roberta Model), which was trained on large quantities of twitter data. We then compared the scores of the Vader Sentiment Scores with the Roberta Sentiment Scores. Ultimately, we checked for incorrect sentiment scores, meaning cases, in which a high score was given by the user, but our models thought that the review was negative and vice versa. This showed us, that in certain cases, sentiment analysis is still flawed. Still, for large data sets, it is able to detect sentiment correctly. </p>
 								<p>The Notebook can be found here: <a href="https://colab.research.google.com/drive/1Le1DsLj7eDWcrqyZG6V87EWMqHait4bc?usp=sharing" target="_blank">Python Project 3 Notebook</a>.</p>
 
@@ -73,6 +74,7 @@
 						<a href="P6.html" class="page">P6</a>
 						<a href="P7.html" class="page">P7</a>
 						<a href="P8.html" class="page">P8</a>
+						<a href="P9_Blogs.html" class="page">Blogs</a>
 						
 					</div>
 				

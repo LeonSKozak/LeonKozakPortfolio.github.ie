@@ -25,11 +25,12 @@
 							<li><a href="P1.html">P1</a></li>
                             <li><a href="P2.html">P2</a></li>
 							<li><a href="P3.html">P3</a></li>
-                            <li class="active"><a href="P4.html">P4</a></li>
+							<li class="active"><a href="P4.html">P4</a></li>
                             <li><a href="P5.html">P5</a></li>
                             <li><a href="P6.html">P6</a></li>
-                            <li><a href="P7.html">P7</a></li>
+							<li><a href="P7.html">P7</a></li>
 							<li><a href="P8.html">P8</a></li>
+							<li><a href="P9_Blogs.html">Blogs</a></li>
 							
 						</ul>
 						<ul class="icons">
@@ -44,15 +45,18 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>Excel Project<br />
-									Data on Students</h1>
-									<p>This Project was part of the class "Data Analytics for Marketing Applications" at DCU Business School. The data set was the result of two surveys which each student had to complete. The goal of this assignment was to clean the data, calculate missing values, and to find interesting stories, hidden inside the data.  </p>
+									<h1>Python Project 4<br />
+									Car Price Prediction and Clustering</h1>
+									<p>This project was created together with my fellow students Lasse Willen and Vincent Stilz. The data set can be found under the following link: </p><a href="https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data"> Car Sales Data Set</a>
 								</header>
-								<div class="image main"><img src="images/Students.jpg" alt="" /></div>
-								<p>Below, you can take a look at the unaltered data set. The first spreadshirt, labeled as "Demographics", contains all demographic data. Here, 5 values are missing. This spreadsheet contains 122 rows of data. The "Personality" Spreadsheet, contains the personality-scores of each student, as they had to do a personality test. This data shows their respective scores on extraversion, intuition, thinking, judging and assertiveness. This spreadsheet, however, only contains 104 rows, as not all students filled out the personality test. The two spreadsheets can be merged via the "last for digits of phone number" column. </p>
-								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT3xjv-URAoAZDuhN3yV1imS7L972bgghzqAHq01qPwGS7Xsf-UnSVsj1Q_SPgXOVHaDwA6NAqOxQnt/pubhtml?widget=true&amp;headers=false" width="900" height="600"></iframe>
-								<p>First, we quickly examined the data. This showed us, that the data is heavily leaning towards positive product ratings. Next, we looked at one example review and tokenized it, using NLTK. In the next step, we used Vader Sentiment Scoring. First, we tested the vader scoring on some very explicit example sentences, such as "I am so happy". This testing helped us to get a feeling for how this scoring works. Then, we let the polarity score, which gave each review a score for negativity, neutrality, positivity and then a compounded score, run over the entire data set. This showed us, that the higher the polarity score, the higher the product rating (Score). Furthermore, we used a pre-trained tokenizer (Roberta Model), which was trained on large quantities of twitter data. We then compared the scores of the Vader Sentiment Scores with the Roberta Sentiment Scores. Ultimately, we checked for incorrect sentiment scores, meaning cases, in which a high score was given by the user, but our models thought that the review was negative and vice versa. This showed us, that in certain cases, sentiment analysis is still flawed. Still, for large data sets, it is able to detect sentiment correctly. </p>
-								<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgKrsvlM4WB50-0V9Q1kZYmYJe7kt8IWT9yEqwKHxfiQf_IA25aWhcrSW3b7_T6eqFQrAMltxSu08P/pubhtml?widget=true&amp;headers=false" width="900" height="600"></iframe>
+								<div class="image main"><img src="images/Cars.jpg" alt="" /></div>
+								<p>The data set contains valuable information on the specific cars. These include the model, the year, the model and a specific trim, its type, meaning SUV, Sedan etc., and the transmission type. Furthermore, the data set also contains data on the condition (1= worst, 49=best), the odometer and the selling price among others. The data set can be found under the link above or below:
+									<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZ6gPQf_vbR0gEP_VN8c1nhjzNOc8mChpLtgf_iE10CV8jLuH0IHQOWf747of9s3NUUGeqxpeIRwFw/pubhtml?widget=true&amp;headers=false" width="900" height="600"></iframe>
+
+                                    In this project we first did a supervised Linear Regression Model, for which we had to split the data, process and model it and then train it, before we were able to make our firat prediction. We then did a Random Forrest Model, which showed better performance when it came to MSE prediction accuracy. Next, we did an Unsupervised Model (K-Means) to cluster the data, using the elbow method. The elbow method is a technique used to determine the optimal number of k-mean clusters. Furthermore, dimensionality reduction has been performed to simplify the data for processing, without losing information. This was helpful for the visualization that was performed. First, basic visualization was performed, then, centroids were added and interactive plots and 3D visualization was performed.</p>
+								
+								<p>The Python Code can be found here:</p>
+								<p>The Notebook can be found here: <a href="https://colab.research.google.com/drive/1ADXnhG2VRcexplI6h4PJlV3j5T_VjwHi?usp=sharing" target="_blank">Python Project 4 Notebook</a>.</p>
 							</section>
 
 					</div>
@@ -71,6 +75,7 @@
 						<a href="P6.html" class="page">P6</a>
 						<a href="P7.html" class="page">P7</a>
 						<a href="P8.html" class="page">P8</a>
+						<a href="P9_Blogs.html" class="page">Blogs</a>
 						
 					</div>
 				
