@@ -52,12 +52,27 @@
 									<p>The Python File can also be found here in the folder Project_Codes: <a href="https://github.com/LeonSKozak/Portfolio.github.ie">Data Science Portfolio on GitHub</a>!</p>
 								</header>
 								<div class="image main"><img src="images/Cars.jpg" alt="" /></div>
-								<p>The data set contains valuable information on the specific cars. These include the model, the year, the model and a specific trim, its type, meaning SUV, Sedan etc., and the transmission type. Furthermore, the data set also contains data on the condition (1= worst, 49=best), the odometer and the selling price among others. The data set can be found under the link above or below:
+								<p>The data set contains valuable information on the specific cars. These include the model, the year, the model and a specific trim, its type, meaning SUV, Sedan etc., and the transmission type. Furthermore, the data set also contains data on the condition (1= worst, 49=best), the odometer and the selling price among others.</p> <p>The data set can be found under the link above or below:<p>
 									<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZ6gPQf_vbR0gEP_VN8c1nhjzNOc8mChpLtgf_iE10CV8jLuH0IHQOWf747of9s3NUUGeqxpeIRwFw/pubhtml?widget=true&amp;headers=false" width="900" height="600"></iframe>
 
-                                    In this project we first did a supervised Linear Regression Model, for which we had to split the data, process and model it and then train it, before we were able to make our firat prediction. We then did a Random Forrest Model, which showed better performance when it came to MSE prediction accuracy. Next, we did an Unsupervised Model (K-Means) to cluster the data, using the elbow method. The elbow method is a technique used to determine the optimal number of k-mean clusters. Furthermore, dimensionality reduction has been performed to simplify the data for processing, without losing information. This was helpful for the visualization that was performed. First, basic visualization was performed, then, centroids were added and interactive plots and 3D visualization was performed.</p>
+                                    <p>In this project we first did a supervised Linear Regression Model, and compared it to a Random Forrest Model, which showed better performance when it came to MSE prediction accuracy. Next, we did an Unsupervised Model (K-Means) to cluster the data, using the elbow method. The elbow method is a technique used to determine the optimal number of k-mean clusters. Furthermore, dimensionality reduction has been performed to simplify the data for processing, without losing information. This was helpful for the visualization that was performed.</p>
 								
-								<p>The Python Code can be found here:</p>
+									<p><strong>Preprocessing:</strong></p>
+									<p>Missing Vavlues: All rows containing missing values have been dropped using .dropna. This had to be done, so that the machine learning algorithms used later, did not have to work with missing data, which would have complicated the training process.</p>
+									<p>Data Splitting: For the supervised and unsupervised models used, the data has been split into X features and the Y target, which was necessary to split them into the test and training sets, suing train_test_split. The X features were e.g. year, make, model, odometer and condition, while the Y target was selling price, as the goal was to predict the selling price.</p>
+									<p>Scaling: Since many machine learning algorithms assume, that the data/features are on the same scale. This, however, was not the case. If scaling is not performed, features with a greater range would dominate the function, lowering the models accuracy. In this project, StandardScaler is used for the numerical features. This tool changes each features mean to 0 and the standard deviation to 1.</p>
+									<p>One-Hot-Encoding: In this project, the features make and model were transformed into numerical values. To do that, OneHotEncoder has been used, which generates new columns with the encoded values. This step was needed to increase the model accuracy.</p>
+									
+									<p><strong>Feature Engineering:</strong></p>
+									<p>Feature Transformation: The features got transformed through scaling and encoding, as has been described above. This ensured, that all features were appropriately processed before entering them into any models.</p>
+									<p>Dimensionality Reduction: Singular Value Decomposition (SVD) has been used to reduce the high dimensionality of the features to make the visualization easier. It also helps with noise reduction, as it eliminates less important variables. This way, the dimensionality could be simplified, while also retaining all necessary information.</p>
+									<p>Furthermore, Linear Regression, Random Forrest Regression have been used for prediction. K-Means Clustering, using the elbow method, has been performed to find groups within the data.</p>
+
+									<p><strong>Visualization:</strong></p>
+									<p>First, basic visualization was performed, then, centroids were added and interactive plots and 3D visualization was performed.</p>
+										
+
+								<p>The Python Code as a .py file can be found in the repository (See Link Above)</p>
 								<p>The Notebook can be found here: <a href="https://colab.research.google.com/drive/1ADXnhG2VRcexplI6h4PJlV3j5T_VjwHi?usp=sharing" target="_blank">Python Project 4 Notebook</a>.</p>
 							</section>
 
